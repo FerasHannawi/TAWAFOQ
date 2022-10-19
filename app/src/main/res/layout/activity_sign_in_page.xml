@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteGold"
+    tools:context=".SignInPage">
+
+    <Button
+        android:id="@+id/buttonDate"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="ا"
+        app:layout_constraintBottom_toTopOf="@+id/الإيميل"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/الاسمـالثلاثي" />
+
+    <Button
+        android:id="@+id/إنشاءـالحساب"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/FainLightGold"
+        android:fontFamily="sans-serif-black"
+        android:text="إنشاء الحساب"
+        android:textSize="20sp"
+        app:cornerRadius="@android:dimen/system_app_widget_inner_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/إدخلـكودـالتسجيل"
+        tools:targetApi="s" />
+
+    <Button
+        android:id="@+id/طلبـكودـالتسجيل"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/FainLightGold"
+        android:fontFamily="sans-serif-black"
+        android:text="الحصول على كود التسجيل"
+        android:textSize="20sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/إدخلـكودـالتسجيل"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/قسمـالتسجيل"
+        tools:targetApi="s" />
+
+    <Switch
+        android:id="@+id/قسمـالتسجيل"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="أقسم وأقر أن كل البيانات التي أدخلتها وسأُدخلها عند إنشاء الحساب صحيحة.  وأتحمل أي عواقب قانونية في حال عدم صحتها."
+        android:textColor="@color/BlackGold"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/طلبـكودـالتسجيل"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/الرقمـالسري"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/إنشاءـحسابك"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="إنشاء حسابك:"
+        android:textAllCaps="false"
+        android:textColor="#80621D"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <EditText
+        android:id="@+id/الاسمـالثلاثي"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/ic_person"
+        android:ems="10"
+        android:hint="  إسمك الثلاثي"
+        android:inputType="textPersonName"
+        android:outlineProvider="none"
+        android:paddingRight="12dp"
+        android:shadowColor="#00294848"
+        android:textAlignment="viewEnd"
+        android:textColor="#59000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/الإيميل"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/إنشاءـحسابك"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+
+    <EditText
+        android:id="@+id/الإيميل"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/ic_email"
+        android:ems="10"
+        android:hint="  الإيميل الخاص بك"
+        android:inputType="textEmailAddress"
+        android:paddingRight="12dp"
+        android:textColor="#59000000"
+        app:layout_constraintBottom_toTopOf="@+id/الرقمـالسري"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDate" />
+
+    <EditText
+        android:id="@+id/رقمـالجوال"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/ic_phone"
+        android:ems="10"
+        android:hint="رقم جوالك  "
+        android:inputType="phone"
+        android:paddingRight="12dp"
+        android:textAlignment="textEnd"
+        android:textColor="#59000000"
+        app:layout_constraintBottom_toTopOf="@+id/طلبـكودـالتسجيل"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/الرقمـالسري" />
+
+    <EditText
+        android:id="@+id/الرقمـالسري"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/ic_password"
+        android:ems="10"
+        android:hint="إدخل رقمك السري  "
+
+        android:inputType="textPassword"
+        android:paddingRight="12dp"
+        android:textAlignment="textEnd"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/قسمـالتسجيل"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/الإيميل" />
+
+    <EditText
+        android:id="@+id/إدخلـكودـالتسجيل"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/ic_verification_code"
+        android:ems="10"
+        android:hint="  إدخل كود التسجيل"
+        android:inputType="number"
+        android:paddingRight="12dp"
+        android:textColor="#59000000"
+        app:layout_constraintBottom_toTopOf="@+id/إنشاءـالحساب"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/طلبـكودـالتسجيل" />
+
+
+    <EditText
+        android:id="@+id/birthDate"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="تاريخك الميلادي"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/الإيميل"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/الاسمـالثلاثي" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

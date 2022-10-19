@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="BlackGold">#493209</color>
+    <color name="BrownGold">#66450C</color>
+    <color name="DarkGold">#805B10</color>
+    <color name="OrangeGold">#926C15</color>
+    <color name="TanGold">#A47E1B</color>
+    <color name="Gold">#B69121</color>
+
+
+    <color name="FaintDarkGold">#7F601D</color>
+    <color name="FaintBrownGold">#87681E</color>
+    <color name="FaintTanGold">#977926</color>
+    <color name="FainLightGold">#A4862C</color>
+    <color name="FaintLightGold">#B49A34</color>
+
+
+    <color name="LightGold">#C9A227</color>
+    <color name="FaintBrightGold">#C6AC3A</color>
+    <color name="BrightGold">#EDC531</color>
+    <color name="SunnyGold">#FFE169</color>
+    <color name="WhiteGold">#FFFBF2</color>
+
+
+    <color name="FaintGrey">#FF9E9E9E</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

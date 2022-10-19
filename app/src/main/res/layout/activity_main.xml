@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteGold"
+    android:backgroundTint="@color/WhiteGold"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/تسجيل_جديد"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/FainLightGold"
+        android:fontFamily="sans-serif-black"
+        android:text="تسجيل جديد"
+        android:textSize="20sp"
+        app:cornerRadius="@android:dimen/system_app_widget_inner_radius"
+        app:layout_constraintBottom_toTopOf="@+id/لدي_حساب"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:targetApi="s" />
+
+    <TextView
+        android:id="@+id/TAWAAFOQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:fontFamily="sans-serif-black"
+        android:text="TAWAAFOQ"
+        android:textColor="#80621D"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/تسجيل_جديد"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/تـوافـق"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="تـوافـق"
+        android:textColor="#8C6C20"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TAWAAFOQ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956" />
+
+    <Button
+        android:id="@+id/لدي_حساب"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/FainLightGold"
+        android:fontFamily="sans-serif-black"
+        android:text="لدي حساب"
+        android:textSize="20sp"
+        app:cornerRadius="@android:dimen/system_app_widget_inner_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756"
+        tools:targetApi="s" />
+
+    <Switch
+        android:id="@+id/موافقةـالتسجيل"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="عند التسجيل، أنت توافق على الشروط وسياسة الخصوصية واستخدام ملفات الكوكيز."
+        android:textColor="@color/BlackGold"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/لدي_حساب"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
